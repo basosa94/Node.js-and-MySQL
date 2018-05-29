@@ -76,7 +76,15 @@ function purchaseProduct() {
                     console.log("You're in luck! There are " + res[0].stock_quantity + " left in stock.");
                     console.log("The price of the item is $" + res[0].price);
                     console.log("Your total will be $" + parseFloat(total).toFixed(2) + " before tax and shipping costs.");
-                    connection.end();
+
+                    var new_stock = res[0].stock_quantity-answer.quantity;
+                    var sql = "UPDATE products SET ? WHERE ?";
+
+                    connection.query(sql, [{stock_quantity : new_stock}, {item_id : answer.id}], function (err) {
+                        if (err) throw err;
+                        console.log("Stock has been updated. There are " + new_stock + " units left.");
+                        connection.end();
+                    });
                 } else {
                     console.log("Insufficient quantity! There are only " + res[0].stock_quantity + " in stock.");
                     connection.end();
