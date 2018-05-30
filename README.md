@@ -16,5 +16,14 @@ Once the customer types in a valid id, the customer will be asked how many units
 
 [![Screenshot 4](images/Screenshot4.PNG)](images/Screenshot4.PNG)
 
+After the customer asks for a certain number of units to purchase, the command line will either tell the customer one of two things. If there are not enough items in storage, the command line will spit out a message that there are not enough items in storage.
+
+[![Screenshot 5](images/Screenshot5.PNG)](images/Screenshot5.PNG)
+
+However, if there are enough units in stock, the customer will be told the total cost of their purchase and stock number will be updated to account for their purchase.
+
+[![Screenshot 2](images/Screenshot2.PNG)](images/Screenshot2.PNG)
+
+
 
 
