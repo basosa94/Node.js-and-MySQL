@@ -8,3 +8,13 @@ When one types in node bamazonCustomer.js into the command line, a table will po
 
 [![Screenshot 1](images/Screenshot1.PNG)](images/Screenshot1.PNG)
 
+Once prompted, the customer must type in a value between 1 and 10. If the customer does not type in a valid id, an error will pop up and the customer will be asked again.
+
+[![Screenshot 3](images/Screenshot3.PNG)](images/Screenshot3.PNG)
+
+Once the customer types in a valid id, the customer will be asked how many units of the chosen item they want to purchase. The value they must type must be a whole number greater than 0. If the customer does not type in a valid number, an error will pop up and they will be prompted again with the same question.
+
+[![Screenshot 4](images/Screenshot4.PNG)](images/Screenshot4.PNG)
+
+
+
